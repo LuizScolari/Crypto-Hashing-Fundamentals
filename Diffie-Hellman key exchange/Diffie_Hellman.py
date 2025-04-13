@@ -7,10 +7,10 @@ def generate_private_key(n, g):
     # Bob private key
     b = random.randint(1, n)
 
-    # gˆx mod n, Alice's k1
+    # gˆa mod n, Alice's k1
     k1 = pow(g, a, n)
 
-    # gˆx mod n, Bob's k2
+    # gˆb mod n, Bob's k2
     k2 = pow(g, b, n)
 
     # If an atacker try to get x and y (the private keys) => the discrete logarithm problem
