@@ -1,4 +1,4 @@
-package RSA;
+package Modular_Arithmetic;
 
 public class ModularInverse {
     // Brute-force
