@@ -40,6 +40,32 @@ def generate_large_prime(star=random_start, end=random_end):
         num = random.randint(star, end)
     return num  # Return the generated prime
 
+'''
+Primeiro passo:
+    - Calulate n
+    - n = p * q (p & q are primes)
+Segundo passo:
+    - Calculate phi (totiente de Euler)
+    - Isso representa a quantidade de inteiros positivos menores que n que são coprimos com n
+    - phi = (p-1)*(q-1)
+    - ex: 3, 5 => phi = 2*4 = 8; Então 8 números menores que 15 (3*5) são coprimos com 15; φ(15)=8
+Terceiro passo:
+    - Escolhe um valor e
+    - 1 < e < φ(n); gcd(e,φ(n))=1
+    - O e precisa ser menor que φ(n) e maior que 1; O mds entre φ(n) e e precisa ser 1, ou seja, φ(n) e e precisam ser coprimos
+Quarto passo: 
+    - Calcular d, que é o inverso modular de e mod φ(n)
+    - d*e ≡ 1 mod φ(n)
+    - Utiliza o algoritmo de euclides extendido
+
+m = mensagem
+Private key = (d,n)
+Encrypt = (m**d)%n
+
+Public key = (e, n)
+Decrypt = (m**e)%n
+'''
+
 # Generate RSA public and private key pair
 def generate_rsa_keys():
     p = generate_large_prime()  # First prime
