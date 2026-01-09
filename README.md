@@ -6,10 +6,16 @@ Applying cryptography and hashing fundamentals.
 
 This repository contains implementations of well-known cryptographic algorithms, such as:  
 
-- **Caesar Cipher**  
-- **DES (Data Encryption Standard)**  
-- **AES (Advanced Encryption Standard)**  
-- **RSA (Rivest-Shamir-Adleman)**  
+- **Caesar Cipher**
+- **DES (Data Encryption Standard)**
+- **AES (Advanced Encryption Standard)**
+- **RSA (Rivest-Shamir-Adleman)**
+- **Diffie-Hellman Key Exchange**
+- **ECC (Elliptic Curve Cryptography)**
+- **ECDSA (Elliptic Curve Digital Signature Algorithm)**
+- **One-Time Pad**
+- **Hashing (MD5 and SHA-256)**
+- **Modular Arithmetic (Euclidean Algorithm and Modular Inverse)**
 
 The goal is to improve programming and cryptography skills using Python and Java libraries.  
 
